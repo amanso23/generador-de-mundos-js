@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ecf0f1; /* Fondo blanco */
+    color: #2c3e50; /* Texto más oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #3498db; 
+    font-size: 40px;
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+form {
+    width: 400px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+label {
+    font-size: 16px;
+    color: #34495e; 
+}
+
+input {
+    width: 93%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7; 
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #2c3e50; 
+}
+
+fieldset {
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 18px;
+    color: #3498db; 
+    font-weight: bold;
+}
+
+button {
+    background-color: #3498db; 
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #2980b9; 
+}
+
+
+p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.mapa-generado{
+    
+
+}
+
+.alFormulario {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3498db; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000; 
+    margin: 6px;
+    text-decoration: none;
+    
+}
+
+.alFormulario:hover {
+    background-color: #2980b9; 
+}
+

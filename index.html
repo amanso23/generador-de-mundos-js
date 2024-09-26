@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Generador de Mundos</title>
+</head>
+<body>
+
+    <form id="formularioConfiguracion">
+        <header>
+            <h1>Generador de Mundos</h1>
+        </header>
+        <label for="tamanoMapa">Tamaño del mapa:</label> 
+        <input type="number" id="tamanoMapa" name="tamanoMapa" value="64" max="90">
+
+        <label for="maximaAreaOcupada">Máx. área ocupada %:</label>
+        <input type="number" id="maximaAreaOcupada" name="maximaAreaOcupada" value="80" max="100">
+
+        <fieldset> 
+            <legend>Naturaleza:</legend>
+            <label for="minZonasNaturaleza">Zonas mínimas:</label>
+            <input type="number" id="minZonasNaturaleza" name="minZonasNaturaleza" value="2">
+
+            <label for="maxZonasNaturaleza">Zonas máximas:</label>
+            <input type="number" id="maxZonasNaturaleza" name="maxZonasNaturaleza" value="8">
+
+            <label for="tamanioMaxZonaNaturaleza">Tamaño máx. zona:</label>
+            <input type="number" id="tamanioMaxZonaNaturaleza" name="tamanioMaxZonaNaturaleza" value="500">
+
+            <label for="tamanioTotalMaxNaturaleza">Tamaño total máx.:</label>
+            <input type="number" id="tamanioTotalMaxNaturaleza" name="tamanioTotalMaxNaturaleza" value="800">
+        </fieldset>
+
+        <fieldset>
+            <legend>Urbano:</legend>
+            <label for="minZonasUrbano">Zonas mínimas:</label>
+            <input type="number" id="minZonasUrbano" name="minZonasUrbano" value="4">
+
+            <label for="maxZonasUrbano">Zonas máximas:</label>
+            <input type="number" id="maxZonasUrbano" name="maxZonasUrbano" value="6">
+
+            <label for="tamanioMaxZonaUrbano">Tamaño máx. zona:</label>
+            <input type="number" id="tamanioMaxZonaUrbano" name="tamanioMaxZonaUrbano" value="100">
+
+            <label for="tamanioTotalMaxUrbano">Tamaño total máx.:</label>
+            <input type="number" id="tamanioTotalMaxUrbano" name="tamanioTotalMaxUrbano" value="300">
+        </fieldset>
+
+        <fieldset>
+            <legend>Comercial:</legend>
+            <label for="minZonasComercial">Zonas mínimas:</label>
+            <input type="number" id="minZonasComercial" name="minZonasComercial" value="2">
+
+            <label for="maxZonasComercial">Zonas máximas:</label>
+            <input type="number" id="maxZonasComercial" name="maxZonasComercial" value="8">
+
+            <label for="tamanioMaxZonaComercial">Tamaño máx. zona:</label>
+            <input type="number" id="tamanioMaxZonaComercial" name="tamanioMaxZonaComercial" value="50">
+
+            <label for="tamanioTotalMaxComercial">Tamaño total máx.:</label>
+            <input type="number" id="tamanioTotalMaxComercial" name="tamanioTotalMaxComercial" value="200">
+        </fieldset>
+
+        <button type="button" onclick="generarMapa()">Generar</button>
+    </form>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
